@@ -22,21 +22,21 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="&amp;emsp;&amp;emsp;总结一些常用的 HTML 标签和 CSS 写法">
+  <meta name="description" content="&amp;emsp;&amp;emsp; 对css层叠样式表和使用方式以及常用的语法做简单的介绍和总结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML标签">
-<meta property="og:url" content="http://yoursite.com/2021/02/03/HTML%E6%A0%87%E7%AD%BE/index.html">
+<meta property="og:title" content="CSS基础">
+<meta property="og:url" content="http://yoursite.com/2021/02/04/CSS%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="QQ空间">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;总结一些常用的 HTML 标签和 CSS 写法">
+<meta property="og:description" content="&amp;emsp;&amp;emsp; 对css层叠样式表和使用方式以及常用的语法做简单的介绍和总结">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.runoob.com/images/box-model.gif">
-<meta property="article:published_time" content="2021-02-03T13:06:40.188Z">
-<meta property="article:modified_time" content="2021-02-04T06:34:58.307Z">
+<meta property="article:published_time" content="2021-02-04T06:36:01.191Z">
+<meta property="article:modified_time" content="2021-02-04T06:37:13.677Z">
 <meta property="article:author" content="hikari">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.runoob.com/images/box-model.gif">
 
-<link rel="canonical" href="http://yoursite.com/2021/02/03/HTML%E6%A0%87%E7%AD%BE/">
+<link rel="canonical" href="http://yoursite.com/2021/02/04/CSS%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>HTML标签 | QQ空间</title>
+  <title>CSS基础 | QQ空间</title>
   
 
 
@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/03/HTML%E6%A0%87%E7%AD%BE/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/04/CSS%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/neko.jpg">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          HTML标签
+          CSS基础
         </h1>
 
         <div class="post-meta">
@@ -182,16 +182,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-02-03 21:06:40" itemprop="dateCreated datePublished" datetime="2021-02-03T21:06:40+08:00">2021-02-03</time>
+              <time title="创建时间：2021-02-04 14:36:01 / 修改时间：14:37:13" itemprop="dateCreated datePublished" datetime="2021-02-04T14:36:01+08:00">2021-02-04</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-04 14:34:58" itemprop="dateModified" datetime="2021-02-04T14:34:58+08:00">2021-02-04</time>
-              </span>
 
           
 
@@ -204,60 +198,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>&emsp;&emsp;总结一些常用的 HTML 标签和 CSS 写法</p>
+        <p>&emsp;&emsp; 对css层叠样式表和使用方式以及常用的语法做简单的介绍和总结</p>
   <a id="more"></a>
 
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><blockquote>
-<p>块元素</p>
-</blockquote>
-<h4 id="块元素的特征："><a href="#块元素的特征：" class="headerlink" title="块元素的特征："></a>块元素的特征：</h4><ul>
-<li><p>总是从新的一行开始,并且独占一行</p>
-</li>
-<li><p>高度、宽度都是可控的</p>
-</li>
-<li><p>宽度没有设置时，默认为 100%</p>
-</li>
-<li><p>块级元素中可以包含块级元素和行内元素</p>
-</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//常见的块元素</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>最常用的行内元素，可以通过css包装成任意样式,可以说是搬砖中“砖”的概念<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题的标签，h1~h6文字从大到小，程度上来说也是大标题到小标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  此标签作为li的父元素</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span>li是无序列表标签，按规范是写在ul下的,在需要排列时使用<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">//一般ul和li的用法如下</span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>导航1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>导航2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>导航3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>导航4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>标签是最常用的块元素标签之一，用于单行显示的文本，因为每一个p标签都会另其一行<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">pre</span>&gt;</span> 预处理文本标签，可以先暂时不做了解 <span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>行内元素</p>
-</blockquote>
-<ul>
-<li><p>不会独占一行,行内元素会和行内元素在同一行排列</p>
-</li>
-<li><p>不能设置宽度和高度属性</p>
-</li>
-<li><p>宽度没有设置时，默认为 100%</p>
-</li>
-<li><p>CSS 设置竖直方向的 margin 属性无效</p>
-</li>
-<li><p>默认宽度为该元素包含内容的宽度</p>
-</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//常见的行内元素</span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>最常用的行内元素,里面可以写文字内容<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"这里是要跳转的链接地址"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>这个标签里面的文字是粗体,一般用的比较少，都是用css控制<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体字标签，一般不咋用<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>行内块元素</p>
-</blockquote>
-<ul>
-<li>行内块元素和块元素一样具有宽高属性</li>
-<li>默认的宽度和行内元素一样,以元素内包含的内容作为默认宽度</li>
-<li>和行内元素一样，不会另起一行,能排列在其他行内或者行内块元素后面</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//input作为输入框，在html种经常用到，可以根据type的不同，作为文字输入，进入选择，密码输入框等功能</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> /&gt;</span></span><br><span class="line">//要输入多行文字一般使用这个标签 cols控制水平方向的字数 rows控制行数</span><br><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">cols</span>=<span class="string">"30"</span> <span class="attr">rows</span>=<span class="string">"10"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">//按钮标签</span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>这里可以显示按钮的文字,并且按钮有自带的样式，可以点击，有点击效果，作为事件的触发器<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>可替换元素</p>
-</blockquote>
-<ul>
-<li>特点同行内块元素</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//img标签可以显示图片 <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"这是图片的链接"</span> <span class="attr">alt</span>=<span class="string">"这是图片不能显示的时候显示的文字"</span> <span class="attr">title</span>=<span class="string">"这是鼠标悬浮在图片上时显示的文字"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="下期课程预告"><a href="#下期课程预告" class="headerlink" title="下期课程预告"></a>下期课程预告</h3><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><blockquote>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><blockquote>
 <p>css 简介</p>
 </blockquote>
 <pre><code>CSS 指层叠样式表 (Cascading Style Sheets)，HTML都有自己的默认样式，但是很单一不能满足需求，所以需要css样式表来自定义标签的样式。</code></pre><blockquote>
@@ -385,13 +330,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/10/09/TypeScript%E4%B8%AD%E8%A3%85%E9%A5%B0%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="TypeScript中装饰器的使用">
-      <i class="fa fa-chevron-left"></i> TypeScript中装饰器的使用
+    <a href="/2021/02/03/HTML%E6%A0%87%E7%AD%BE/" rel="prev" title="HTML标签">
+      <i class="fa fa-chevron-left"></i> HTML标签
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/02/04/CSS%E5%9F%BA%E7%A1%80/" rel="next" title="CSS基础">
-      CSS基础 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -450,7 +392,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#块元素的特征："><span class="nav-number">1.0.1.</span> <span class="nav-text">块元素的特征：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下期课程预告"><span class="nav-number">1.1.</span> <span class="nav-text">下期课程预告</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS"><span class="nav-number">2.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择器"><span class="nav-number">2.0.1.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优先级"><span class="nav-number">2.0.2.</span> <span class="nav-text">优先级</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下期预告-css-的布局方案"><span class="nav-number">3.</span> <span class="nav-text">下期预告-css 的布局方案</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS"><span class="nav-number">1.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择器"><span class="nav-number">1.0.1.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优先级"><span class="nav-number">1.0.2.</span> <span class="nav-text">优先级</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下期预告-css-的布局方案"><span class="nav-number">2.</span> <span class="nav-text">下期预告-css 的布局方案</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
